@@ -101,16 +101,16 @@ function getPasswordOptions(){
       alert("Enter a number, 10 - 64. Please try again");
       return false; 
     }
-    if (confirm("would you like special character in your password?")){
+    if (confirm("would you like special character in your password? Click OK")){
       CharOptionsArr = CharOptionsArr.concat(specialCharacters);
     }
-    if (confirm("would you like numbers?")){
+    if (confirm("would you like numbers? Click OK")){
       CharOptionsArr = CharOptionsArr.concat(numericCharacters);
     }
-    if (confirm("would you like lower case letters?")){
+    if (confirm("would you like lower case letters? Click OK")){
       CharOptionsArr = CharOptionsArr.concat(lowerCasedCharacters);
     }
-    if (confirm("would you like upper case letters?")){
+    if (confirm("would you like upper case letters? Click OK")){
       CharOptionsArr = CharOptionsArr.concat(upperCasedCharacters);
     }
     return true;
